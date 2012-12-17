@@ -1,0 +1,10 @@
+name = CRF Workbench Moderation
+core = 7.x
+package = CRF
+dependencies[] = features
+dependencies[] = workbench_moderation
+features[features_api][] = api:1
+features[user_permission][] = moderate content from draft to submitted_to_ocha
+features[user_permission][] = moderate content from needs_review to submitted_to_ocha
+features[user_permission][] = moderate content from submitted_to_ocha to needs_review
+features[user_permission][] = moderate content from submitted_to_ocha to published
